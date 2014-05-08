@@ -10,6 +10,6 @@ householdData$DateTime <- strptime(
 png(filename = "plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
     bg = "white")
-plot(householdData$DateTime, householdData$Global_active_power, main="", 
+with(householdData, plot(DateTime, Global_active_power, main="", 
      ylab="Global Active Power (kilowatts)", xlab="", type="l")
 dev.off()
